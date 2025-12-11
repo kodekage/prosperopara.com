@@ -1,0 +1,22 @@
+import Link from './Link'
+import siteMetadata from '@/data/siteMetadata'
+
+export default function Footer() {
+  return (
+    <footer>
+      <div className="mt-16 flex flex-col items-center">
+        <div className="mb-3 flex space-x-4 font-medium">
+          <Link href={`mailto:${siteMetadata.email}`}>Mail</Link>
+          <Link href={siteMetadata.github}>Github</Link>
+          <Link href={siteMetadata.linkedin as string}>Linkedin</Link>
+          <Link href={siteMetadata.x}>Twitter</Link>
+        </div>
+        <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
+          <div>{siteMetadata.author}</div>
+          <div>{` • `}</div>
+          <div>{`© ${new Date().getFullYear()}`}</div>
+        </div>
+      </div>
+    </footer>
+  )
+}
