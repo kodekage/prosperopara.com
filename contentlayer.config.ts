@@ -147,9 +147,24 @@ export const Authors = defineDocumentType(() => ({
   computedFields,
 }))
 
+export const WorkHistory = defineDocumentType(() => ({
+  name: 'WorkHistory',
+  filePathPattern: 'workhistory/**/*.mdx',
+  contentType: 'mdx',
+  fields: {
+    role: { type: 'string', required: true },
+    company: { type: 'string', required: true },
+    url: { type: 'string', required: true },
+    date: { type: 'string' },
+    description: { type: 'string' },
+    tech: { type: 'list', of: { type: 'string' }, default: [] },
+  },
+  computedFields,
+}))
+
 export default makeSource({
   contentDirPath: 'data',
-  documentTypes: [Blog, Authors],
+  documentTypes: [Blog, Authors, WorkHistory],
   mdx: {
     cwd: process.cwd(),
     remarkPlugins: [
