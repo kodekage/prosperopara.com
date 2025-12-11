@@ -9,6 +9,8 @@
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint --fix --dir pages --dir app --dir components --dir lib --dir layouts --dir scripts",
+    "lint:types": "tsc --project ./tsconfig.json",
+    "lint:fix": "prettier --write app/ components/ layouts/ --no-semi && next lint --fix",
     "prepare": "husky"
   },
   "dependencies": {
