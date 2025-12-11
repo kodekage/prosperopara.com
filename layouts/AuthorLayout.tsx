@@ -1,11 +1,8 @@
 import { ReactNode } from 'react'
-import { allBlogs, allWorkHistories, WorkHistory, type Authors } from 'contentlayer/generated'
+import { allBlogs, allWorkHistories, type Authors } from 'contentlayer/generated'
 import Image from '@/components/Image'
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer'
-import { formatDate } from 'pliny/utils/formatDate'
-import siteMetadata from '@/data/siteMetadata'
 import Link from 'next/link'
-import Tag from '@/components/Tag'
 import { MDXLayoutRenderer } from 'pliny/mdx-components'
 import Tech from '@/components/Tech'
 
