@@ -6,10 +6,10 @@ const siteMetadata = {
   description: 'FullStack Engineer',
   language: 'en-us',
   theme: 'light', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://www.prosperopara.com',
+  siteRepo: 'https://github.com/kodekage/prosperopara.com',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
-  socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
+  socialBanner: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   email: 'oparaprosper79@gmail.com',
   github: 'https://github.com/kodekage',
   linkedin: 'https://www.linkedin.com/in/prosper-opara',
